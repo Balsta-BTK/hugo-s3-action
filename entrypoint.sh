@@ -33,5 +33,3 @@ fi
 
 # Deploy as configured in your repo
 hugo deploy
-
-EOF
