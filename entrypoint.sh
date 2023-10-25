@@ -18,7 +18,7 @@ fi
 # Install Hugo
 # HUGO_VERSION=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | jq -r '.tag_name')
 mkdir tmp/ && cd tmp/          
-curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.117.0/hugo_extended_0.117.0_Linux-64bit.tar.gz | tar -xvzf-
+curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.119.0/hugo_extended_0.119.0_Linux-64bit.tar.gz | tar -xvzf-
 mv hugo /usr/local/bin/
 cd .. && rm -rf tmp/
 cd ${GITHUB_WORKSPACE}
