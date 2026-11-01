@@ -1,7 +1,8 @@
-FROM pahud/awscli-v2:node-lts
+FROM debian:bookworm-slim
 
-RUN yum update -y && \
-    yum install -y curl jq
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends bash ca-certificates curl git jq libstdc++6 && \
+    rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh /
 
